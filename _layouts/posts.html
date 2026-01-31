@@ -1,0 +1,24 @@
+---
+layout: default
+---
+
+<link rel="stylesheet" href="/styles/blog-post.css">
+
+<div class="blog-post-page">
+  <a href="/blog/" class="blog-back-link">← Back to Blog</a>
+  
+  <header class="blog-post-header">
+    <h1 class="blog-post-page-title">{{ page.title }}</h1>
+    <div class="blog-post-meta">
+      {% if page.author %}
+        <span class="blog-post-author">By {{ page.author }}</span>
+        <span class="meta-separator">•</span>
+      {% endif %}
+      <time class="blog-post-page-date">{{ page.date | date: "%B %-d, %Y" }}</time>
+    </div>
+  </header>
+  
+  <article class="blog-post-content">
+    {{ content }}
+  </article>
+</div>

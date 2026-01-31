@@ -1,0 +1,27 @@
+---
+layout: default
+title: Blog
+---
+
+<link rel="stylesheet" href="/styles/blog-index.css">
+
+<div class="blog-landing-page">
+  <h2 class="blog-landing-title">Recent Blog Posts</h2>
+  <div class="blog-posts-container">
+    {% for post in site.posts %}
+      <article class="blog-post-card">
+        <h3 class="blog-post-title"><a href="{{ post.url }}">{{ post.title }}</a></h3>
+        <div class="blog-card-meta">
+          {% if post.author %}
+            <span class="blog-post-author">By {{ post.author }}</span>
+            <span class="meta-separator">•</span>
+          {% endif %}
+          <time class="blog-post-date">{{ post.date | date: "%B %-d, %Y" }}</time>
+        </div>
+        {% if post.excerpt %}
+          <p class="blog-post-excerpt">{{ post.excerpt | strip_html | truncate: 180 }}</p>
+        {% endif %}
+      </article>
+    {% endfor %}
+  </div>
+</div>
