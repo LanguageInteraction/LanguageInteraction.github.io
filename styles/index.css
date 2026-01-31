@@ -140,7 +140,7 @@ header a:hover::after {
 #main{
     display: flex;
     flex-direction: row;
-    padding-top: 30px;
+    padding-top: 70px;
 }
 
 #intro{
@@ -1078,14 +1078,12 @@ footer{
     transition: all .3s ease;
     color: var(--st1);
     flex-shrink: 0;
-    box-shadow: 0 4px 12px rgba(0,0,0,.1);
 }
 
 .carousel-btn:hover {
     background: var(--st3);
     color: white;
     transform: scale(1.1);
-    box-shadow: 0 6px 16px rgba(0,0,0,.2);
 }
 
 .carousel-btn:active {
@@ -1095,6 +1093,7 @@ footer{
 .carousel-btn svg {
     width: 24px;
     height: 24px;
+    box-shadow: none;
 }
 
 .carousel-dots {
