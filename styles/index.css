@@ -998,7 +998,7 @@ footer{
     color: rgba(0,0,0,.6);
 }
 .suggestion a{
-    color: var(--st1);
+    color: #111;
     text-decoration: none;
     border-bottom: 1px solid var(--st3);
     transition: all .2s ease;
