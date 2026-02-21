@@ -143,3 +143,90 @@ document.addEventListener('DOMContentLoaded', function() {
     //     nextButton.click();
     // }, 5000); // Change photo every 5 seconds
 });
+
+// ---- Section navigation (right-side scroll dots) ----
+document.addEventListener('DOMContentLoaded', function () {
+    const sections = [
+        { id: 'main',         label: 'Home' },
+        { id: 'updates',      label: 'Updates' },
+        { id: 'blog',         label: 'Blog' },
+        { id: 'people',       label: 'People' },
+        { id: 'publications', label: 'Publications' },
+        { id: 'photo-wall',   label: 'Lab Life' }
+    ];
+
+    // Build nav structure
+    const nav   = document.createElement('nav');
+    nav.className = 'section-nav';
+    nav.setAttribute('aria-label', 'Section navigation');
+
+    const track = document.createElement('div');
+    track.className = 'section-nav-track';
+
+    // Background line + fill
+    const line = document.createElement('div');
+    line.className = 'section-nav-line';
+    const fill = document.createElement('div');
+    fill.className = 'section-nav-line-fill';
+    line.appendChild(fill);
+    track.appendChild(line);
+
+    // Create dots
+    const dots = sections.map(({ id, label }, i) => {
+        const btn = document.createElement('button');
+        btn.className = 'section-nav-dot' + (i === 0 ? ' active' : '');
+        btn.setAttribute('aria-label', 'Go to ' + label);
+
+        const tip = document.createElement('span');
+        tip.className = 'nav-tooltip';
+        tip.textContent = label;
+        btn.appendChild(tip);
+
+        btn.addEventListener('click', () => {
+            const el = document.getElementById(id);
+            if (el) window.scrollTo({ top: el.offsetTop - 60, behavior: 'smooth' });
+        });
+
+        track.appendChild(btn);
+        return btn;
+    });
+
+    nav.appendChild(track);
+    document.body.appendChild(nav);
+
+    // ---- Scroll detection ----
+    let active = 0;
+
+    function setActive(idx) {
+        if (idx === active) return;
+        dots[active].classList.remove('active');
+        dots[idx].classList.add('active');
+        fill.style.height = (idx / (sections.length - 1) * 100) + '%';
+        active = idx;
+    }
+
+    function updateNav() {
+        const scrollY = window.scrollY;
+        let idx = 0;
+
+        for (let i = sections.length - 1; i >= 0; i--) {
+            const el = document.getElementById(sections[i].id);
+            if (el && el.offsetTop <= scrollY + 75) {
+                idx = i;
+                break;
+            }
+        }
+
+        setActive(idx);
+    }
+
+    let ticking = false;
+    window.addEventListener('scroll', () => {
+        if (!ticking) {
+            requestAnimationFrame(() => { updateNav(); ticking = false; });
+            ticking = true;
+        }
+    });
+
+    updateNav(); // set initial state
+});
