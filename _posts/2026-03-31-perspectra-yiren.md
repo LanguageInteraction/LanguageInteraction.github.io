@@ -7,7 +7,7 @@ author: Yiren Liu
 Research studies have been increasingly arguing for concerns over [reducing critical thinking skills](https://www.microsoft.com/en-us/research/publication/the-impact-of-generative-ai-on-critical-thinking-self-reported-reductions-in-cognitive-effort-and-confidence-effects-from-a-survey-of-knowledge-workers/) in knowledge workers. 
 In the context of scientific research, the use of deep research systems for tasks like literature review and research ideation are also becoming increasingly common, thus posing similar concerns for reduced researchers' critical thinking, especially junior researchers.
 
-What if brainstorming a new research idea felt less like interrogating a chatbot and more like moderating a panel of opinionated experts — ones you get to pick? 
+What if brainstorming a new research idea felt less like interrogating a chatbot and more like moderating a panel of opinionated experts?
 That's the rationale behind [**Perspectra**](https://arxiv.org/abs/2509.20553), our new system for AI-assisted research ideation, presented at [CHI 2026](https://chi2026.acm.org/) in Barcelona.
 
 ![Perspectra interface screenshot](/resources/blog/perspectra-interface.png)
