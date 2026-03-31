@@ -1,5 +1,8 @@
 # How to Write a Blog Post
 
+
+[Tal's Instruction](https://docs.google.com/document/d/1Aa6In4ik2uLkJBJK6tdBGmlnifhx_wmji9dKCd_K-gE/edit?usp=sharing)
+
 ## Quick Start
 
 1. Create a new file in `_posts/` with the naming format:
