@@ -81,41 +81,6 @@ def hello():
 > This is a quote.
 ```
 
-## Example Post
-
-```markdown
----
-layout: posts
-title: "Understanding Jargon in Medical Texts"
-date: 2026-04-01
-author: Yijun Liu
----
-
-In this post, we share findings from our recent study on how
-readers interact with specialized terminology in medical papers.
-
-## Background
-
-Medical literature is notoriously difficult for non-experts...
-
-## Our Approach
-
-We designed an interactive tool that...
-
-![System overview](/resources/blog/system-overview.png)
-
-## Results
-
-| Condition   | Comprehension | Time (min) |
-|-------------|---------------|------------|
-| Baseline    | 45%           | 12.3       |
-| Our Tool    | 72%           | 8.1        |
-
-## Conclusion
-
-Our findings suggest that...
-```
-
 ## File Naming Rules
 
 - Use lowercase letters, numbers, and hyphens only
