@@ -11,12 +11,22 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
     <script src="./js/script.js" defer></script>
 </head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-78MYTKLQ88"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-78MYTKLQ88');
+</script>
 <body>
     <header>
         <h1><a href="/">Language Interaction Lab</a></h1>
         <nav>
             <ul>
                 <li><a href="#research">Research</a></li>
+                <li><a href="/papers/">Papers</a></li>
                 <li><a href="#people">People</a></li>
                 <li><a href="/blog/">Blog</a></li>
             </ul>
@@ -26,10 +36,8 @@
 
         <section id="main">
             <section id="intro">
-                <p>We are the <a href="" target="_blank">Language Interaction Lab</a> at the <a href="https://siebelschool.illinois.edu/research/areas/interactive-computing" target="_blank">Siebel School of Computing and Data Science</a> at UIUC.</p> 
-                <p>We work at the intersection of Natural Language Processing and Human-Computer Interaction. Our mission is to design human-centric AI systems that reduce inequalities in knowledge access by bridging the gap between specialized information and human understanding.
-                    We focuses on evaluating the ability of AI to communicate complex concepts to diverse audiences, while simultaneously building interactive tools that augment how people read, write, and listen in knowledge-intensive fields like medicine, law, and science. </p>
-                <p>If you are a prospective student interested in joining us, please fill out this <a href="https://docs.google.com/forms/d/e/1FAIpQLSetZMWXU-mRz34Bj8j8D8lJ9LCfyH7qDmShiXzVpfRcpGEThQ/closedform" target="_blank">interest survey.</a></p>
+                <p>We are the <a href="">Language Interaction Lab</a> at the <a href="https://siebelschool.illinois.edu/" target="_blank">Siebel School of Computing and Data Science</a> at the <a href="https://illinois.edu" target="_blank">University of Illinois Urbana-Champaign</a>.</p> 
+                <p>We work at the intersection of Natural Language Processing and Human-Computer Interaction. We design human-centric AI systems that make it easier for more people to communicate, share and understand expert knowledge. This includes evaluating the ability of AI to communicate complex concepts to diverse audiences and building interactive tools that augment how people read, write, and listen in knowledge-intensive fields like medicine, law, and science.</p>
             </section>
 
             <section id="lab-logo">
@@ -109,31 +117,64 @@
         <section id="updates" class="sections">
             <h2>News & Updates</h2>
                 <ul>
-                    <li><strong>Jan 2026:</strong> We have X papers accepted to CHI 2026!</li>
+                    <li><strong>Jan 2026:</strong> We have 6 papers going to CHI 2026 this year! The papers represent the lab’s growing focus on human-centered AI in high-stakes domains like Law, Medicine, and Science. More details about each paper coming soon.</li>
                 </ul>
         </section>
 
-        <section id="blog" class="sections">
-            <h2>Featured Blog Posts</h2>
-            <div id="blog-posts">
-                <div class="blog-post">
-                    <h3><a href="blog/post1.html">A Blog Post Name</a></h3>
-                    <p class="date">June 10, 2024</p>
-                    <p>In this post, we explore the latest advancements in AI technologies that are making specialized knowledge more accessible to everyone...</p>
-                </div>
-            </div>
-        </section>
 
-        <!-- <section id="research">
-            <div id="research-1" class="research-projects">
-                <img src="./resources/research/project1.png" alt="Project 1">
-                <div class="project-info">
-                    <h3>Project Title 1</h3>
-                    <p>Author Name</p>
-                    <p><a href="#">View Project</a><a href="#">Edit Project</a></p>
+        <section class="sections" id="research">
+            <h2>Selected Publications</h2>
+            <div id="publications-list">
+
+                <div class="publication">
+                    <div class="pub-content">
+                        <h3 class="pub-title">Paper Plain: Making Medical Research Papers Approachable to Healthcare Consumers with Natural Language Processing</h3>
+                        <p class="pub-authors"><strong>Tal August</strong>, Lucy Lu Wang, Jonathan Bragg, Marti A. Hearst, Andrew Head, Kyle Lo</p>
+                        <p class="pub-venue"><em>ACM TOCHI 2023</em></p>
+                        <div class="pub-links">
+                            <a href="./resources/paper/August2023PaperPM.pdf" class="pub-link" target="_blank" rel="noopener">PDF</a>
+                            <a href="https://arxiv.org/abs/2203.00130" class="pub-link" target="_blank" rel="noopener">arXiv</a>
+                        </div>
+                    </div>
                 </div>
+
+                <div class="publication">
+                    <div class="pub-content">
+                        <h3 class="pub-title">How Language Formality in Security and Privacy Interfaces Impacts Intended Compliance</h3>
+                        <p class="pub-authors">Jackson Stokes, <strong>Tal August</strong>, Robert A Marver, Alexei Czeskis, Franziska Roesner, Tadayoshi Kohno, Katharina Reinecke</p>
+                        <p class="pub-venue"><em>CHI 2023</em></p>
+                        <div class="pub-links">
+                            <a href="./resources/paper/Stokes2023CHI.pdf" class="pub-link" target="_blank" rel="noopener">PDF</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="publication">
+                    <div class="pub-content">
+                        <h3 class="pub-title">All That's 'Human' Is Not Gold: Evaluating Human Evaluation of Generated Text</h3>
+                        <p class="pub-authors">Elizabeth Clark, <strong>Tal August</strong>, Sofia Serrano, Nikita Haduong, Suchin Gururangan, Noah A. Smith</p>
+                        <p class="pub-venue"><em>ACL 2021</em></p>
+                        <div class="pub-links">
+                            <a href="./resources/paper/Clark2021AllT.pdf" class="pub-link" target="_blank" rel="noopener">PDF</a>
+                            <a href="https://arxiv.org/abs/2107.00061" class="pub-link" target="_blank" rel="noopener">arXiv</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="publication">
+                    <div class="pub-content">
+                        <h3 class="pub-title">Writing Strategies for Science Communication: Data and Computational Analysis</h3>
+                        <p class="pub-authors"><strong>Tal August</strong>, Lauren Kim, Katharina Reinecke, Noah A Smith</p>
+                        <p class="pub-venue"><em>EMNLP 2020</em></p>
+                        <div class="pub-links">
+                            <a href="./resources/paper/august2020writing.pdf" class="pub-link" target="_blank" rel="noopener">PDF</a>
+                        </div>
+                    </div>
+                </div>
+
             </div>
-        </section> -->
+            <a href="/papers/" class="view-all-link">View all publications &rarr;</a>
+        </section>
 
         <section id="people" class="sections">
             <h2>Our Team</h2>
@@ -142,7 +183,7 @@
             <div id="people-container">
                 <div class="person">
                     <img src="./resources/people/profile_pics/tal_clear.png" alt="Tal August">
-                    <p><a href="" target="_blank">Tal August</a></p>
+                    <p><a href="https://talaugust.github.io/" target="_blank">Tal August</a></p>
                     <p class="person_role">Lab Director</p>
                 </div>
 
@@ -210,36 +251,14 @@
         </section>
 
 
-        <section id="publications" class="sections">
-            <h2>Publications</h2>
-            <div id="publications-list">
-                
-                <div class="publication">
-                    <div class="pub-image">
-                        <img src="path/to/paper1-thumbnail.jpg" alt="Paper 1 figure">
-                    </div>
-                    <div class="pub-content">
-                        <h3 class="pub-title">
-                            <a href="https://example.com/paper1.pdf" target="_blank" rel="noopener">
-                                Our amazing paper
-                            </a>
-                        </h3>
-                        <p class="pub-authors">
-                            <strong>Author Name</strong>, xx, yyyy
-                        </p>
-                        <p class="pub-venue">
-                            <em>xxx 2023</em>
-                        </p>
-                        <div class="pub-links">
-                            <a href="https://example.com/paper.pdf" class="pub-link" target="_blank" rel="noopener">PDF</a>
-                            <a href="https://arxiv.org/abs/xxxx" class="pub-link" target="_blank" rel="noopener">arXiv</a>
-                            <a href="https://github.com/username/repo" class="pub-link" target="_blank" rel="noopener">Code</a>
-                            <a href="https://example.com/demo" class="pub-link" target="_blank" rel="noopener">Demo</a>
-                            <a href="https://doi.org/xxxx" class="pub-link" target="_blank" rel="noopener">Blog Post</a>
-                        </div>
-                    </div>
+        <section id="blog" class="sections">
+            <h2>Featured Blog Posts</h2>
+            <div id="blog-posts">
+                <div class="blog-post">
+                    <h3><a href="blog/post1.html">A Blog Post Name</a></h3>
+                    <p class="date">June 10, 2024</p>
+                    <p>In this post, we explore the latest advancements in AI technologies that are making specialized knowledge more accessible to everyone...</p>
                 </div>
-
             </div>
         </section>
 
@@ -256,20 +275,24 @@
                 <div class="carousel-track-container">
                     <div class="carousel-track">
                         <div class="carousel-slide">
-                            <img src="path/to/photo1.jpg" alt="Lab dinner">
-                            <div class="carousel-caption">Lab Dinner celebrating paper acceptance</div>
+                            <img src="./resources/people/social/p1.jpg" alt="Trick or Research">
+                            <div class="carousel-caption">2024 Trick or Research</div>
                         </div>
 
                         <div class="carousel-slide">
-                            <img src="path/to/photo1.jpg" alt="Lab dinner">
-                            <div class="carousel-caption">Lab Dinner celebrating paper acceptance</div>
+                            <img src="./resources/people/social/p2.jpg" alt="Snow Art">
+                            <div class="carousel-caption">Indu's Snow Art</div>
                         </div>
 
                         <div class="carousel-slide">
-                            <img src="path/to/photo1.jpg" alt="Lab dinner">
-                            <div class="carousel-caption">Lab Dinner celebrating paper acceptance</div>
+                            <img src="./resources/people/social/p3.jpg" alt="Lab Outing">
+                            <div class="carousel-caption">Ice-Cream Treat 2025</div>
                         </div>
-                        
+
+                        <div class="carousel-slide">
+                            <img src="./resources/people/social/p4.png" alt="Escape Room">
+                            <div class="carousel-caption">Escape Room 2025</div>
+                        </div>
                     </div>
                 </div>
                 

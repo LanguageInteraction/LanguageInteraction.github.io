@@ -149,9 +149,9 @@ document.addEventListener('DOMContentLoaded', function () {
     const sections = [
         { id: 'main',         label: 'Home' },
         { id: 'updates',      label: 'Updates' },
-        { id: 'blog',         label: 'Blog' },
+        { id: 'research',     label: 'Publications' },
         { id: 'people',       label: 'People' },
-        { id: 'publications', label: 'Publications' },
+        { id: 'blog',         label: 'Blog' },
         { id: 'photo-wall',   label: 'Lab Life' }
     ];
 
