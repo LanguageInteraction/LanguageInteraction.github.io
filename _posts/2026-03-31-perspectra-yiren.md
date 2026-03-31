@@ -8,7 +8,7 @@ Research studies have been increasingly arguing for concerns over [reducing crit
 In the context of scientific research, the use of deep research systems for tasks like literature review and research ideation are also becoming increasingly common, thus posing similar concerns for reduced researchers' critical thinking, especially junior researchers.
 
 What if brainstorming a new research idea felt less like interrogating a chatbot and more like moderating a panel of opinionated experts?
-That's the rationale behind [**Perspectra**](https://arxiv.org/abs/2509.20553), our new system for AI-assisted research ideation, presented at [CHI 2026](https://chi2026.acm.org/) in Barcelona.
+That's the rationale behind [**Perspectra**](https://arxiv.org/abs/2509.20553), our new system for AI-assisted research ideation, presented at [CHI 2026](https://chi2026.acm.org/) in Barcelona. [Check out the demo video!](https://drive.google.com/file/d/1Xa8EaVB8HD04BZFuq8NmcHRbV4Abmv6m/view?usp=sharing)
 
 ![Perspectra interface screenshot](/resources/blog/perspectra-interface.png)
 
@@ -25,10 +25,15 @@ Perspectra reimagines multi-agent interaction as a **threaded, forum-style discu
 
 The system offers several key interaction mechanisms:
 
+![Perspectra interface screenshot](/resources/blog/perspectra-interface-2.png)
+
 - **@-mention and reply**: Users can tag specific expert agents into a conversation, forming ad-hoc panels on the fly.
 - **Thread branching**: When an interesting sub-topic emerges, users can spin off a new discussion thread to explore it in depth without losing track of the original conversation.
 - **What-if panels**: Users can preview how a particular agent might respond with a specific stance (agree, disagree, question) before committing to a direction.
 - **Mind map visualization**: A dynamic, semantically zoomable graph maps out the structure of the deliberation, also showing which agents made claims, who supported or rebutted whom, and why.
+
+![Perspectra interface screenshot](/resources/blog/perspectra-interface-3.png)
+
 
 Each agent's response is tagged with a deliberation act (ISSUE, CLAIM, SUPPORT, REBUT, QUESTION) drawn from argumentation theory, making the reasoning structure visible and navigable rather than buried in a wall of text.
 
@@ -48,7 +53,7 @@ We ran a within-subjects study with 18 participants, comparing Perspectra agains
 
 A growing concern in the HCI and AI communities is that generative AI tools may actually *reduce* critical thinking by making it too easy to offload reasoning. Perspectra takes a different approach: it introduces **productive friction**, where the @-mention and reply mechanisms require users to decide *which* experts to engage and *what* to ask, which in turn nudges them toward more deliberate reasoning. Isn't this cool? But more discussions are needed for other potential design options to better incorporate friction that encourages deep thinking without discouraging users.
 
-We also observed emergent behaviors we didn't design for. Some participants left "TODO" anchors in their notes as self-assigned verification checkpoints. Others decomposed broad research questions into targeted sub-queries directed at specific agents. 
+We also observed emergent behaviors we didn't design for. Some participants left ``TODO''' anchors in their notes as self-assigned verification checkpoints. Others decomposed broad research questions into targeted sub-queries directed at specific agents. 
 
 ## Try It Out
 
