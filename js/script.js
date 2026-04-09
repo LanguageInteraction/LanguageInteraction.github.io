@@ -149,7 +149,6 @@ document.addEventListener('DOMContentLoaded', function () {
     const sections = [
         { id: 'main',         label: 'Home' },
         { id: 'updates',      label: 'Updates' },
-        { id: 'research',     label: 'Publications' },
         { id: 'people',       label: 'People' },
         { id: 'blog',         label: 'Blog' },
         { id: 'photo-wall',   label: 'Lab Life' }
