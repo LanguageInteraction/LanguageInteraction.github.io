@@ -1,5 +1,9 @@
 /* Blog Landing Page */
 
+header{
+  background-color: white;
+}
+
 .blog-landing-page {
   max-width: 1100px;
   margin: 0 auto;
