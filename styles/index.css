@@ -595,20 +595,25 @@ footer{
         font-size: 1rem;
     }
 
+    main {
+        width: 100%;
+        margin-left: 0;
+    }
+
     #main {
         flex-direction: column;
     }
 
     #intro {
-        width: 100vw;
+        width: 100%;
         padding: 2rem 2rem;
-        padding-top: 6rem;
+        padding-top: 160px;
         font-size: 1.15rem;
         line-height: 2rem;
     }
 
     #lab-logo {
-        width: 100vw;
+        width: 100%;
         padding: 2rem 2rem;
     }
 
@@ -621,13 +626,22 @@ footer{
         padding: 2rem 2rem;
     }
 
+    #updates,
+    #updates ul {
+        width: 100%;
+    }
+
+    .sections {
+        scroll-margin-top: 150px;
+    }
+
     .person {
         width: 40vw;
     }
 
     .person img {
-        width: 35vw;
-        height: 35vw;
+        width: 130px;
+        height: 130px;
     }
 
     #people-container {
@@ -640,6 +654,7 @@ footer{
     }
 
     .blog-post {
+        width: 100%;
         padding: 1.2rem 1.3rem;
     }
 
@@ -688,7 +703,7 @@ footer{
 
     #intro {
         padding: 1.5rem 1.5rem;
-        padding-top: 4rem;
+        padding-top: 160px;
         font-size: 1.1rem;
         line-height: 1.9rem;
     }
@@ -711,12 +726,12 @@ footer{
     }
 
     .person {
-        width: 70vw;
+        width: 100%;
     }
 
     .person img {
-        width: 60vw;
-        height: 60vw;
+        width: 120px;
+        height: 120px;
     }
 
     .person a {
@@ -809,12 +824,12 @@ footer{
     }
 
     .person {
-        width: 80vw;
+        width: 100%;
     }
 
     .person img {
-        width: 70vw;
-        height: 70vw;
+        width: 100px;
+        height: 100px;
     }
 
     .blog-post {
@@ -1288,7 +1303,7 @@ footer{
     }
     
     .carousel-track-container {
-        width: 80vw;
+        width: 90vw;
     }
     
     .carousel-container {
