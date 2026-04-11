@@ -22,8 +22,7 @@ header{
   display: flex;
   flex-direction: column;
   align-items: center;
-    width: 60vw;
-
+  width: 100%;
 }
 
 .blog-post-page-title {
