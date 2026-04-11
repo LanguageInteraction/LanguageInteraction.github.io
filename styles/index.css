@@ -235,7 +235,7 @@ svg{
 
 .person img{
   width: 80%;
-  max-width: 190px;
+  max-width: 200px;
   aspect-ratio: 1;
   object-fit: contain;
   padding-top: 25px;
@@ -267,7 +267,7 @@ svg{
 
 #people-container{
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(min(180px, 100%), 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(min(clamp(160px, 14vw, 200px), 100%), 1fr));
     gap: 2rem;
 }
 
