@@ -588,6 +588,11 @@ footer{
         font-size: 1rem;
     }
 
+    main {
+        width: 100%;
+        margin-left: 0;
+    }
+
     #main {
         flex-direction: column;
         padding: 0 2rem;
@@ -628,6 +633,7 @@ footer{
     }
 
     .blog-post {
+        width: 100%;
         padding: 1.2rem 1.3rem;
     }
 
@@ -1263,7 +1269,7 @@ footer{
     }
     
     .carousel-track-container {
-        width: 80vw;
+        width: 90vw;
     }
     
     .carousel-container {

@@ -87,7 +87,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const dotsContainer = document.querySelector('.carousel-dots');
     
     let currentIndex = 0;
-    
+
     // Create dots
     slides.forEach((_, index) => {
         const dot = document.createElement('button');
@@ -96,8 +96,9 @@ document.addEventListener('DOMContentLoaded', function() {
         dot.setAttribute('aria-label', `Go to photo ${index + 1}`);
         dotsContainer.appendChild(dot);
     });
-    
+
     const dots = Array.from(dotsContainer.children);
+
     
     // Update carousel position
     function updateCarousel(index) {
