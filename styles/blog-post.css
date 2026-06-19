@@ -173,6 +173,11 @@ header{
   border-top: 1px solid #ddd;
 }
 
+.giscus-comments {
+  max-width: 750px;
+  margin: 3rem auto 1rem;
+}
+
 @media (max-width: 768px) {
   .blog-post-header {
     width: 100%;
