@@ -14,6 +14,11 @@ header{
   color: #333;
   text-decoration: none;
   margin-bottom: 2rem;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+.blog-back-link:hover {
+  color: #3498db;
+  transform: translateX(-4px);
 }
 
 .blog-post-header {
@@ -81,10 +86,13 @@ header{
 .blog-post-content a {
   color: #3498db;
   text-decoration: none;
+  border-bottom: 1px solid rgba(52, 152, 219, 0.35);
+  transition: color 0.2s ease, border-bottom-color 0.2s ease;
 }
 
 .blog-post-content a:hover {
-  text-decoration: underline;
+  color: #1a6fa8;
+  border-bottom-color: #1a6fa8;
 }
 
 /* Lists */
