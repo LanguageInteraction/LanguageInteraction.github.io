@@ -27,6 +27,12 @@ header{
   border: 1px solid #ddd;
   border-radius: 6px;
   padding: 1.5rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+.blog-post-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(0,0,0,.09);
+  border-color: #bbb;
 }
 
 .blog-post-title {
@@ -38,6 +44,10 @@ header{
 .blog-post-title a {
   color: #1a252f;
   text-decoration: none;
+  transition: color 0.2s ease;
+}
+.blog-post-title a:hover {
+  color: #3498db;
 }
 
 .blog-card-meta {
