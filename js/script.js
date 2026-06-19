@@ -15,6 +15,7 @@
   };
 
   const svg = document.querySelector('#lab-logo svg');
+  if (!svg) return;
 
 // credit line container
 const credit = document.createElement('div');
@@ -81,6 +82,7 @@ function randomPick(obj){
 
 document.addEventListener('DOMContentLoaded', function() {
     const track = document.querySelector('.carousel-track');
+    if (!track) return;
     const slides = Array.from(track.children);
     const nextButton = document.querySelector('.carousel-btn.next');
     const prevButton = document.querySelector('.carousel-btn.prev');
@@ -147,6 +149,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 // ---- Section navigation (right-side scroll dots) ----
 document.addEventListener('DOMContentLoaded', function () {
+    if (!document.getElementById('main')) return;
     const sections = [
         { id: 'main',         label: 'Home' },
         { id: 'updates',      label: 'Updates' },
