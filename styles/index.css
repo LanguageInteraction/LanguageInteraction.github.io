@@ -319,6 +319,21 @@ svg{
 #blog-posts{
   display: grid;
   gap: 1.4rem;
+  max-height: 520px;
+  overflow-y: auto;
+  padding-right: 0.5rem;
+  scrollbar-width: thin;
+  scrollbar-color: var(--st3) transparent;
+}
+#blog-posts::-webkit-scrollbar {
+  width: 4px;
+}
+#blog-posts::-webkit-scrollbar-track {
+  background: transparent;
+}
+#blog-posts::-webkit-scrollbar-thumb {
+  background: var(--st3);
+  border-radius: 2px;
 }
 
 .blog-post{
