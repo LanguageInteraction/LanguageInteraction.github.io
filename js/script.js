@@ -154,6 +154,7 @@ document.addEventListener('DOMContentLoaded', function () {
         { id: 'main',         label: 'Home' },
         { id: 'updates',      label: 'Updates' },
         { id: 'people',       label: 'People' },
+        { id: 'publications', label: 'Publications' },
         { id: 'blog',         label: 'Blog' },
         { id: 'photo-wall',   label: 'Lab Life' }
     ];
