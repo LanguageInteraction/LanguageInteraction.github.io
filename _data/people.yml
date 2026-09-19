@@ -1,0 +1,90 @@
+# ---------------------------------------------------------------------------
+# Lab members. This single file drives BOTH the homepage team section
+# (current members only) and the full People page at /people/ (everyone).
+#
+# To move someone to alumni: cut their entry out of `current:` and paste it
+# under `alumni:`, then fill in `now:` (where they are now) and `years:`.
+#
+# Fields
+#   name   (required) display name
+#   role   (required) role in the lab. For alumni, the role they held here.
+#   url    (optional) personal site / Scholar / LinkedIn
+#   photo  (optional) e.g. /resources/people/profile_pics/tal_clear.png
+#                     leave it out and initials are shown instead
+#   pub_name (optional) the name they publish under, when it differs from the
+#                     name shown here - used to bold them in author lists
+#   years  (alumni)   e.g. "2023 - 2026"
+#   now    (alumni)   where they are now, e.g. "Research Scientist, Allen AI"
+#   now_url (alumni, optional) link for the `now` text
+# ---------------------------------------------------------------------------
+
+current:
+  - name: Tal August
+    role: Lab Director
+    url: https://talaugust.github.io/
+    photo: /resources/people/profile_pics/tal_clear.png
+
+  - name: Ziheng (Fred) Huang
+    pub_name: Ziheng Huang
+    role: PhD Candidate
+    url: https://www.linkedin.com/in/ziheng-huang-52619a1a5/
+    photo: /resources/people/profile_pics/ziheng_clear.png
+
+  - name: Yifan Song
+    role: PhD Candidate
+    url: https://scholar.google.com/citations?user=D8rss_cAAAAJ
+    photo: /resources/people/profile_pics/yifan_clear.png
+
+  - name: Yijun Liu
+    role: PhD Candidate
+    url: https://yijunliu523.github.io/
+    photo: /resources/people/profile_pics/yijun_clear.png
+
+  - name: Michelle Huang
+    role: PhD Candidate
+    url: https://mhuang412.github.io/
+    photo: /resources/people/profile_pics/michelle_clear.png
+
+  - name: Indu Panigrahi
+    role: PhD Student
+    url: https://ind1010.github.io/
+    photo: /resources/people/profile_pics/indu_clear.png
+
+  - name: Lechen Zhang
+    role: PhD Student
+    url: https://leczhang.com/
+    photo: /resources/people/profile_pics/lechen_clear.png
+
+  - name: Leo Luo
+    role: MS Student
+    url: https://tingfengluo.github.io/
+    photo: /resources/people/profile_pics/leo_clear.png
+
+  - name: Alice Fan
+    role: Undergraduate Student
+    url: https://www.linkedin.com/in/alicelfan/
+    photo: /resources/people/profile_pics/alice_clear.png
+
+
+# Alumni show up in their own section on /people/ only, never on the homepage.
+# They stay bolded in author lists on the publications page.
+#
+# TODO: `years:` and `now:` are blank below - ask Yiren and Sneha what they
+# want listed, and whether they are happy for it to be public at all. A card
+# with no `now:` renders fine, so it is safe to leave blank until they say.
+alumni:
+  - name: Yiren Liu
+    role: PhD Alumni
+    url: http://yiren-liu.github.io/
+    photo: /resources/people/profile_pics/yiren_clear.png
+    # years: 2021 - 2026
+    # now: Job title, Employer
+    # now_url: https://example.com/
+
+  - name: Sneha Sundar
+    role: Undergrad Alumni
+    url: https://ssundr.github.io/
+    photo: /resources/people/profile_pics/sneha_clear.png
+    # years: 2024 - 2026
+    # now: Job title, Employer
+    # now_url: https://example.com/

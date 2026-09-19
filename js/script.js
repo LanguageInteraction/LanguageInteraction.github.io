@@ -14,30 +14,33 @@
     "Tal August":   ["--tal1","--tal2","--tal3"]
   };
 
+  // The logo only exists on the homepage; the palette itself applies everywhere.
   const svg = document.querySelector('#lab-logo svg');
-  if (!svg) return;
+  let who = null;
 
-// credit line container
-const credit = document.createElement('div');
-credit.style.display = 'flex';
-credit.style.alignItems = 'center';
-const bar = document.createElement('span');
-bar.setAttribute('aria-hidden', 'true');
-const who = document.createElement('span');
-who.className = 'credit-who';
+  if (svg) {
+    // credit line container
+    const credit = document.createElement('div');
+    credit.style.display = 'flex';
+    credit.style.alignItems = 'center';
+    const bar = document.createElement('span');
+    bar.setAttribute('aria-hidden', 'true');
+    who = document.createElement('span');
+    who.className = 'credit-who';
 
-// refresh icon
-const icon = document.createElement('span');
-icon.textContent = '⟳';
-icon.style.cursor = 'pointer';
-icon.style.marginLeft = '6px';
-icon.title = 'Click to shuffle palette';
+    // refresh icon
+    const icon = document.createElement('span');
+    icon.textContent = '⟳';
+    icon.style.cursor = 'pointer';
+    icon.style.marginLeft = '6px';
+    icon.title = 'Click to shuffle palette';
 
-// clicking the icon also triggers shuffle
-icon.addEventListener('click', () => applyPalette(randomPick(palettes)));
+    // clicking the icon also triggers shuffle
+    icon.addEventListener('click', () => applyPalette(randomPick(palettes)));
 
-credit.append(bar, who, icon);
-svg.after(credit);
+    credit.append(bar, who, icon);
+    svg.after(credit);
+  }
 
 
   function firstName(full){
@@ -47,6 +50,7 @@ svg.after(credit);
   }
 
   function creditLine(name){
+  if (!who) return;
   const fn = firstName(name);
   who.textContent = (fn === 'Yijun') ? 'Designed by Yijun' : `Color by ${fn}`;
 }
@@ -61,7 +65,7 @@ function applyPalette(name){
   root.style.setProperty('--st1', dotColor);
   root.style.setProperty('--st2', LColor);
   root.style.setProperty('--st3', bgColor);
-  svg.style.background = bgColor;
+  if (svg) svg.style.background = bgColor;
 
   creditLine(name);
 }
@@ -73,9 +77,12 @@ function randomPick(obj){
 }
 
   applyPalette(randomPick(palettes));
-  svg.style.cursor = 'pointer';
-  svg.title = 'Click to shuffle palette';
-  svg.addEventListener('click', () => applyPalette(randomPick(palettes)));
+
+  if (svg) {
+    svg.style.cursor = 'pointer';
+    svg.title = 'Click to shuffle palette';
+    svg.addEventListener('click', () => applyPalette(randomPick(palettes)));
+  }
   
 })();
 
@@ -158,6 +165,8 @@ document.addEventListener('DOMContentLoaded', function () {
         { id: 'blog',         label: 'Blog' },
         { id: 'photo-wall',   label: 'Lab Life' }
     ];
+
+    if (!sections.every(({ id }) => document.getElementById(id))) return;
 
     // Build nav structure
     const nav   = document.createElement('nav');

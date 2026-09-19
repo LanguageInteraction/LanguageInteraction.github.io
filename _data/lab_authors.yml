@@ -1,0 +1,88 @@
+# ---------------------------------------------------------------------------
+# Author IDs used by scripts/update_publications.py to look for new papers.
+#
+#   python3 scripts/update_publications.py                 # what's new?
+#   python3 scripts/update_publications.py --find "Name"   # look up an ID
+#
+# Google Scholar has no API and blocks scripted access, so this uses OpenAlex
+# (openalex.org) instead - an open catalogue that covers CHI/UIST/ACL/EMNLP.
+#
+# Every lab paper so far has Tal on it, so Tal's ID alone finds almost
+# everything. Add a student's ID to also catch papers they publish elsewhere.
+# `openalex:` may be a single ID or a list (OpenAlex often splits one person
+# across several author records).
+# ---------------------------------------------------------------------------
+
+authors:
+  - name: Tal August
+    openalex: A5029563909
+    # earlier affiliations, so his pre-UIUC papers still count as lab papers
+    also_at:
+      - Allen Institute for AI
+      - University of Washington
+
+  - name: Yiren Liu
+    openalex: A5073358177
+
+  - name: Ziheng Huang
+    openalex: A5090728280
+
+  - name: Yifan Song
+    openalex:
+      - A5065232236
+      - A5139802077
+
+  - name: Yijun Liu
+    openalex: A5125183208
+
+  # Not filled in: OpenAlex has several author records per common name and
+  # guessing gets the wrong person. Run `--find "Michelle Huang"`, check which
+  # row lists the right papers, then paste the ID here.
+  # - name: Michelle Huang
+  #   openalex: A...
+  # - name: Indu Panigrahi
+  #   openalex: A...
+  # - name: Lechen Zhang
+  #   openalex: A...
+  # - name: Leo Luo
+  #   openalex: A...
+
+# A paper counts as a lab paper when a lab member on it lists one of these
+# institutions (or when two lab members are on it together). This is what keeps
+# the other Yifan Songs and Yijun Lius in the catalogue out of your results.
+institutions:
+  - name: University of Illinois Urbana-Champaign
+
+# Long catalogue venue names -> how the papers page writes them.
+# First match wins; matching is case-insensitive substring.
+venue_aliases:
+  - match: human factors in computing systems
+    name: CHI
+  - match: user interface software and technology
+    name: UIST
+  - match: computer-supported cooperative work
+    name: CSCW
+  - match: empirical methods in natural language processing
+    name: EMNLP
+  - match: north american chapter of the association for computational linguistics
+    name: NAACL
+  - match: association for computational linguistics
+    name: ACL
+  - match: transactions on computer-human interaction
+    name: ACM TOCHI
+  - match: acm on human-computer interaction
+    name: PACM HCI
+  - match: technical symposium on computer science education
+    name: SIGCSE
+  - match: designing interactive systems
+    name: DIS
+  - match: learning @ scale
+    name: L@S
+  - match: computer and communications security
+    name: CCS
+  - match: undergraduate research technology conference
+    name: IEEE URTC
+  - match: communications of the acm
+    name: Communications of the ACM
+  - match: arxiv
+    name: ArXiv

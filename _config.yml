@@ -1,1 +1,9 @@
 title: LiLab @ UIUC
+
+# Publications settings. The papers themselves live in _data/publications.bib.
+publications:
+  # how many of the newest papers the homepage lists
+  homepage_count: 10
+  # papers older than this are treated as pre-lab work and left off the site;
+  # scripts/update_publications.py ignores anything earlier
+  first_year: 2022

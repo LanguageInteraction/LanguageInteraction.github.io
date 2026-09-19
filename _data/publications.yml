@@ -1,0 +1,521 @@
+# GENERATED FILE - do not edit by hand. Your changes will be overwritten.
+#
+# Written by scripts/build_publications.py from _data/publications.bib.
+# Add or change a paper in the .bib, then run:
+#
+#     python3 scripts/build_publications.py
+#
+# Both files are committed: the bib is the source, this is what Jekyll reads.
+# Entries marked `draft = {true}` in the bib are left out until you drop that
+# line. An `arxiv` link is only shown on preprints - once a paper is published
+# the page links the published version. Settings live in _config.yml.
+
+papers:
+  - title: From Words to Widgets for Controllable LLM Generation
+    authors: Chao Zhang, Yiren Liu, Lunyiu Nie, Jeffrey M. Rzeszotarski, Yun Huang, Tal August
+    venue: UIST
+    year: 2026
+    type: peer-reviewed
+    key: zhang2026words
+    links:
+      - label: arXiv
+        url: https://arxiv.org/abs/2604.10925
+
+  - title: "FOXGLOVE: Understanding Goal-Oriented and Anchored Writing Feedback from Experts and LLMs on Argumentative Essays"
+    authors: Yijun Liu, Yifan Song, John Gallagher, Sarah Sterman, Tal August
+    venue: EMNLP
+    year: 2026
+    type: peer-reviewed
+    key: liu2026foxglove
+    links:
+      - label: arXiv
+        url: https://arxiv.org/abs/2606.06271
+
+  - title: Learning User Preferences Through Interaction for Long-Term Collaboration
+    authors: Shuhaib Mehri, Priyanka Kargupta, Tal August, Dilek Hakkani-Tür
+    venue: EMNLP
+    year: 2026
+    type: peer-reviewed
+    key: Mehri2026Learning
+    links:
+      - label: arXiv
+        url: https://arxiv.org/abs/2601.02702
+
+  - title: Who Plays Which Role When? Communication Role Dynamics for Peer Recognition and Team Performance Prediction
+    authors: Yifan Song, Wenxuan Wendy Shi, Brian Bailey, Tal August
+    venue: ACL
+    year: 2026
+    type: peer-reviewed
+    key: song2026who
+    links:
+      - label: PDF
+        url: https://aclanthology.org/2026.acl-long.1930.pdf
+      - label: DOI
+        url: https://doi.org/10.18653/v1/2026.acl-long.1930
+
+  - title: "ParseJargon: Personalized Real-time Jargon Support in Online Meetings"
+    authors: Yifan Song, Wing Yee Au, Hon Yung Wong, Brian Bailey, Tal August
+    venue: ACL Demo
+    year: 2026
+    type: peer-reviewed
+    key: song2026parsejargon
+    links:
+      - label: DOI
+        url: https://doi.org/10.18653/v1/2026.acl-demo.61
+
+  - title: "Explain Like I'm 5 or Whatever I Choose: Evaluating the Interactive Potential of Language Model Responses"
+    authors: Indu Panigrahi, Tal August
+    venue: ArXiv
+    year: 2026
+    type: preprint
+    key: panigrahi2026explain
+    links:
+      - label: arXiv
+        url: https://arxiv.org/abs/2606.06788
+
+  - title: Re-Centering Humans in LLM Personalization
+    authors: Lechen Zhang, Jiarui Liu, Tal August
+    venue: ArXiv
+    year: 2026
+    type: preprint
+    key: zhang2026recenterin
+    links:
+      - label: arXiv
+        url: https://arxiv.org/abs/2606.06614
+
+  - title: "From Crafting Text to Crafting Thought: Grounding Intelligent Writing Support to Writing Center Pedagogy"
+    authors: Yijun Liu, John Gallagher, Sarah Sterman, Tal August
+    venue: CHI
+    year: 2026
+    type: peer-reviewed
+    key: liu2026CraftingCHI
+    links:
+      - label: DOI
+        url: https://doi.org/10.1145/3772318.3790292
+
+  - title: "Perspectra: Choosing Your Experts Enhances Critical Thinking in Multi-Agent Research Ideation"
+    authors: Yiren Liu, Viraj Shah, Sangho Suh, Pao Siangliulue, Tal August, Yun Huang
+    venue: CHI
+    year: 2026
+    type: peer-reviewed
+    award: Honorable Mention (top 5%)
+    key: Liu2025perspectra
+    links:
+      - label: DOI
+        url: https://doi.org/10.1145/3772318.3791560
+
+  - title: "Living Contracts: Beyond Document-Centric Interaction with Legal Agreements"
+    authors: Ziheng Huang, Hari Sundaram, Tal August
+    venue: CHI
+    year: 2026
+    type: peer-reviewed
+    key: Huang2025Living
+    links:
+      - label: DOI
+        url: https://doi.org/10.1145/3772318.3791386
+
+  - title: "TermSight: Making Service Contracts Approachable"
+    authors: Ziheng Huang, Tal August, Hari Sundaram
+    venue: CHI
+    year: 2026
+    type: peer-reviewed
+    key: Huang2025term
+    links:
+      - label: DOI
+        url: https://doi.org/10.1145/3772318.3791387
+
+  - title: "Designing Beyond Language: Sociotechnical Barriers in AI Health Technologies for Limited English Proficiency"
+    authors: Michelle Huang, Violeta J. Rodríguez, Koustuv Saha, Tal August
+    venue: CHI
+    year: 2026
+    type: peer-reviewed
+    award: Honorable Mention (top 5%)
+    key: Huang2025Designing
+    links:
+      - label: DOI
+        url: https://doi.org/10.1145/3772318.3791091
+
+  - title: "Cocoa: Co-Planning and Co-Execution with AI Agents"
+    authors: K. J. Kevin Feng, Kevin Pu, Matt Latzke, Tal August, Pao Siangliulue, Jonathan Bragg, Daniel S. Weld, Amy X. Zhang, Joseph Chee Chang
+    venue: CHI
+    year: 2026
+    type: peer-reviewed
+    award: Best Paper (top 1%)
+    key: Feng2024Cocoa
+    links:
+      - label: DOI
+        url: https://doi.org/10.1145/3772318.3791673
+
+  - title: Science and Technology for Augmenting Reading (STAR)
+    authors: Tal August, Andrew Head, Alexa Siu, Elena L. Glassman, Jonathan K. Kummerfeld, Joseph Chee Chang, Lucy Lu Wang, Marti A. Hearst
+    venue: CHI
+    year: 2026
+    type: peer-reviewed
+    key: august2026science
+    links:
+      - label: DOI
+        url: https://doi.org/10.1145/3772363.3778695
+
+  - title: "Mosaic: A Multi-Level Framework for Observing and Evaluating Performance of Multi-Agent Systems"
+    authors: Yiren Liu, Yun Huang, Shunan Guo
+    venue: CHI
+    year: 2026
+    type: peer-reviewed
+    key: liu2026mosaic
+    links:
+      - label: DOI
+        url: https://doi.org/10.1145/3772363.3798830
+
+  - title: "Breaking the Curse of Knowledge: Toward Personalized Jargon Support in Online Meetings"
+    authors: Yifan Song, Yee Wei Au, Hon Yung Wong, Brian P. Bailey, Tal August
+    venue: CHI
+    year: 2026
+    type: peer-reviewed
+    key: song2026breaking
+    links:
+      - label: DOI
+        url: https://doi.org/10.1145/3772363.3798465
+
+  - title: Democratic governance through DAO-based deliberation and voting for inclusive decision making in AI models
+    authors: Tanusree Sharma, Yujin Potter, Jongwon Park, Yiren Liu, Y. Huang, Xun Liu, Dawn Song, Jeffrey T. Hancock, Yang Wang
+    venue: Scientific Reports
+    year: 2026
+    type: peer-reviewed
+    key: sharma2026democratic
+    links:
+      - label: PDF
+        url: https://www.nature.com/articles/s41598-026-40180-8_reference.pdf
+      - label: DOI
+        url: https://doi.org/10.1038/s41598-026-40180-8
+
+  - title: "RIPEL: A Data-Augmented Peer Evaluation System for Assessing Teamwork"
+    authors: Wenxuan Wendy Shi, Jiaqi Linna Niu, Rohan Kumar, Yifan Song, Brian P. Bailey
+    venue: SIGCSE
+    year: 2026
+    type: peer-reviewed
+    key: shi2026ripel
+    links:
+      - label: DOI
+        url: https://doi.org/10.1145/3770761.3777297
+
+  - title: "From Data to Action: Empowering Students to Assess and Improve Teamwork with Cross-Tool Log Data"
+    authors: Yifan Song, Ritika Vithani, Wenxuan Wendy Shi, Brian P. Bailey
+    venue: SIGCSE
+    year: 2026
+    type: peer-reviewed
+    key: song2026from
+    links:
+      - label: DOI
+        url: https://doi.org/10.1145/3770762.3772608
+
+  - title: On the Regulatory Potential of User Interfaces for AI Agent Governance
+    authors: Kevin Feng, Tae Soo Kim, Rock Yuren Pang, Faria Huq, Tal August, Amy X Zhang
+    venue: NeurIPS Workshop on Regulatable ML
+    year: 2025
+    type: preprint
+    badge: Workshop
+    key: feng2025regulatory
+    links:
+      - label: PDF
+        url: /resources/paper/pdf/feng2025regulatory.pdf
+      - label: arXiv
+        url: https://arxiv.org/abs/2512.00742
+
+  - title: "YouthSafe: A Youth-Centric Safety Benchmark and Safeguard Model for Large Language Models"
+    authors: Yaman Yu, Yiren Liu, Yuqi Zhang, Yun Huang, Yang Wang
+    venue: CCS
+    year: 2025
+    type: peer-reviewed
+    key: yu2025youthsafe
+    links:
+      - label: DOI
+        url: https://doi.org/10.1145/3719027.3765168
+
+  - title: Measuring the Complexity of Sub-Policies in Online Terms of Service Networks
+    authors: Rishabh Garg, Ziheng Huang, Hari Sundaram
+    venue: IEEE URTC
+    year: 2025
+    type: peer-reviewed
+    key: garg2025measuring
+    links:
+      - label: DOI
+        url: https://doi.org/10.1109/urtc68753.2025.11533052
+
+  - title: "Tree-of-Debate: Multi-Persona Debate Trees Elicit Critical Thinking for Scientific Comparative Analysis"
+    authors: Priyanka Kargupta, Ishika Agarwal, Tal August, Jiawei Han
+    venue: ACL
+    year: 2025
+    type: peer-reviewed
+    key: kargupta2025tree
+    links:
+      - label: PDF
+        url: /resources/paper/pdf/kargupta2025tree.pdf
+
+  - title: "PersonaFlow: Designing LLM-Simulated Expert Perspectives for Enhanced Research Ideation"
+    authors: Yiren Liu, Pranav Sharma, Mehul Oswal, Haijun Xia, Yun Huang
+    venue: DIS
+    year: 2025
+    type: peer-reviewed
+    key: liu2025personaflo
+    links:
+      - label: DOI
+        url: https://doi.org/10.1145/3715336.3735789
+
+  - title: Can Learners Navigate Imperfect Generative Pedagogical Chatbots? An Analysis of Chatbot Errors on Learning
+    authors: Tiffany Wenting Li, Yifan Song, Hari Sundaram, Karrie Karahalios
+    venue: L@S
+    year: 2025
+    type: peer-reviewed
+    key: li2025can
+    links:
+      - label: DOI
+        url: https://doi.org/10.1145/3698205.3729550
+
+  - title: "Research Borderlands: Analysing Writing Across Research Cultures"
+    authors: Shaily Bhatt, Tal August, Maria Antoniak
+    venue: ACL
+    year: 2025
+    type: peer-reviewed
+    key: Bhatt2025Research
+    links:
+      - label: PDF
+        url: /resources/paper/pdf/Bhatt2025Research.pdf
+      - label: DOI
+        url: https://doi.org/10.18653/v1/2025.acl-long.1272
+
+  - title: Improving Emotional Support Delivery in Text-Based Community Safety Reporting Using Large Language Models
+    authors: Yiren Liu, Yerong Li, Ryan Mayfield, Yun Huang
+    venue: PACM HCI
+    year: 2025
+    type: peer-reviewed
+    key: liu2025improving
+    links:
+      - label: DOI
+        url: https://doi.org/10.1145/3711012
+
+  - title: "EvAlignUX: Advancing UX Evaluation through LLM-Supported Metrics Exploration"
+    authors: Qingxiao Zheng, M. Chen, Pranav Sharma, Yiliu Tang, Mehul Oswal, Yiren Liu, Yun Huang
+    venue: CHI
+    year: 2025
+    type: peer-reviewed
+    key: zheng2025evalignux
+    links:
+      - label: DOI
+        url: https://doi.org/10.1145/3706598.3714045
+
+  - title: "Uncertainty in Action: Confidence Elicitation in Embodied Agents"
+    authors: Tianjiao Yu, Vedant Shah, Muntasir Wahed, Kiet A. Nguyen, Adheesh Juvekar, Tal August, Ismini Lourentzou
+    venue: ArXiv
+    year: 2025
+    type: preprint
+    key: yu2025uncertainty
+    links:
+      - label: PDF
+        url: /resources/paper/pdf/yu2025uncertainty.pdf
+      - label: arXiv
+        url: https://arxiv.org/abs/2503.10628
+
+  - title: Automatic Detection of Research Values from Scientific Abstracts Across Computer Science Subfields
+    authors: Hang Jiang, Tal August, Luca Soldaini, Kyle Lo, Maria Antoniak
+    venue: ArXiv
+    year: 2025
+    type: preprint
+    key: jiang2025automatic
+    links:
+      - label: PDF
+        url: /resources/paper/pdf/jiang2025automatic.pdf
+      - label: arXiv
+        url: https://arxiv.org/abs/2502.16390
+
+  - title: "APPLS: A Meta-evaluation Testbed for Plain Language Summarization"
+    authors: Yue Guo, Tal August, Gondy Leroy, Trevor Cohen, Lucy Lu Wang
+    venue: EMNLP
+    year: 2024
+    type: peer-reviewed
+    key: Guo2023APPLS
+    links:
+      - label: PDF
+        url: /resources/paper/pdf/Guo2023APPLS.pdf
+
+  - title: "T-KAER: Transparency-enhanced Knowledge-Augmented Entity Resolution Framework"
+    authors: Lan Li, Liri Fang, Yiren Liu, Vetle I. Torvik, Bertram Ludäscher
+    venue: International Journal of Digital Curation
+    year: 2024
+    type: peer-reviewed
+    key: li2024tkaer
+    links:
+      - label: DOI
+        url: https://doi.org/10.2218/ijdc.v18i1.934
+
+  - title: "Qlarify: Bridging Scholarly Abstracts and Papers with Recursively Expandable Summaries"
+    authors: Raymond Fok, Joseph Chee Chang, Tal August, Amy X Zhang, Daniel S Weld
+    venue: UIST
+    year: 2024
+    type: peer-reviewed
+    key: Fok2023Qlarify
+    links:
+      - label: PDF
+        url: /resources/paper/pdf/Fok2023Qlarify.pdf
+
+  - title: Evaluating Language Model Math Reasoning via Grounding in Educational Curricula
+    authors: Li Lucy, Tal August, Rose E. Wang, Luca Soldaini, Courtney Allison, Kyle Lo
+    venue: EMNLP Findings
+    year: 2024
+    type: peer-reviewed
+    key: Li2024Evaluating
+    links:
+      - label: PDF
+        url: /resources/paper/pdf/Li2024Evaluating.pdf
+      - label: DOI
+        url: https://doi.org/10.18653/v1/2024.findings-emnlp.323
+
+  - title: Personalized Jargon Identification for Enhanced Interdisciplinary Communication
+    authors: Yue Guo, Joseph Chee Chang, Maria Antoniak, Erin Bransom, Trevor Cohen, Lucy Lu Wang, Tal August
+    venue: NAACL
+    year: 2024
+    type: peer-reviewed
+    key: Guo2023Personalized
+    links:
+      - label: PDF
+        url: /resources/paper/pdf/Guo2023Personalized.pdf
+      - label: DOI
+        url: https://doi.org/10.18653/v1/2024.naacl-long.255
+
+  - title: A Design Space for Intelligent and Interactive Writing Assistants
+    authors: Mina Lee, Katy Ilonka Gero, John Joon Young Chung, <em>et al.</em> (incl. Tal August)
+    venue: CHI
+    year: 2024
+    type: peer-reviewed
+    key: Lee2024Design
+    links:
+      - label: PDF
+        url: /resources/paper/pdf/Lee2024Design.pdf
+      - label: DOI
+        url: https://doi.org/10.1145/3613904.3642697
+
+  - title: "How AI Processing Delays Foster Creativity: Exploring Research Question Co-Creation with an LLM-based Agent"
+    authors: Yiren Liu, Si Chen, Haocong Cheng, Mengxia Yu, Xiao Chuan Ran, Andrew Mo, Yiliu Tang, Yun Huang
+    venue: CHI
+    year: 2024
+    type: peer-reviewed
+    key: liu2024how
+    links:
+      - label: DOI
+        url: https://doi.org/10.1145/3613904.3642698
+
+  - title: "Know Your Audience: The Benefits and Pitfalls of Generating Plain Language Summaries Beyond the \"General\" Audience"
+    authors: Tal August, Kyle Lo, Noah A. Smith, Katharina Reinecke
+    venue: CHI
+    year: 2024
+    type: peer-reviewed
+    key: August2024Complexity
+    links:
+      - label: PDF
+        url: /resources/paper/pdf/August2024Complexity.pdf
+      - label: DOI
+        url: https://doi.org/10.1145/3613904.3642289
+
+  - title: Programming Plagiarism Detection with Learner Data
+    authors: Yifan Song, Yuanxin Wang, Marshall An, Christopher Bogart, Majd Sakr
+    venue: SIGCSE
+    year: 2024
+    type: peer-reviewed
+    key: song2024programmin
+    links:
+      - label: DOI
+        url: https://doi.org/10.1145/3626253.3635520
+
+  - title: Leveraging Large Language Models for Learning Complex Legal Concepts through Storytelling
+    authors: Hang Jiang, Xiajie Zhang, Robert Mahari, Daniel Kessler, Eric Ma, Tal August, Irene Li, Alex Pentland, Yoon Kim, Jad Kabbara, Deb Roy
+    venue: ACL
+    year: 2024
+    type: peer-reviewed
+    key: Hang2023Leveraging
+    links:
+      - label: PDF
+        url: /resources/paper/pdf/Hang2023Leveraging.pdf
+      - label: DOI
+        url: https://doi.org/10.18653/v1/2024.acl-long.388
+
+  - title: "The Semantic Reader Project: Augmenting Scholarly Documents through AI-Powered Interactive Reading Interfaces"
+    authors: Kyle Lo, Joseph Chee Chang, Andrew Head, <em>et al.</em> (incl. Tal August)
+    venue: Communications of the ACM
+    year: 2024
+    type: peer-reviewed
+    key: Lo2023Semantic
+    links:
+      - label: PDF
+        url: /resources/paper/pdf/Lo2023Semantic.pdf
+
+  - title: How Language Formality in Security and Privacy Interfaces Impacts Intended Compliance
+    authors: Jackson Stokes, Tal August, Robert A Marver, Alexei Czeskis, Franziska Roesner, Tadayoshi Kohno, Katharina Reinecke
+    venue: CHI
+    year: 2023
+    type: peer-reviewed
+    selected: true
+    key: Stokes2023CHI
+    links:
+      - label: PDF
+        url: /resources/paper/pdf/Stokes2023CHI.pdf
+      - label: DOI
+        url: https://doi.org/10.1145/3544548.3581275
+
+  - title: "Beyond Summarization: Designing AI Support for Real-World Expository Writing Tasks"
+    authors: Zejiang Shen, Tal August, Pao Siangliulue, Kyle Lo, Jonathan Bragg, Jeff Hammerbacher, Doug Downey, Joseph Chee Chang, David Sontag
+    venue: In2Writing Workshop
+    year: 2023
+    type: preprint
+    badge: Workshop
+    key: Shen2023Beyond
+    links:
+      - label: PDF
+        url: /resources/paper/pdf/Shen2023Beyond.pdf
+      - label: arXiv
+        url: https://arxiv.org/abs/2304.02623
+
+  - title: Discovering the Hidden Facts of User-Dispatcher Interactions via Text-based Reporting Systems for Community Safety
+    authors: Yiren Liu, Ryan Mayfield, Yun Huang
+    venue: PACM HCI
+    year: 2023
+    type: peer-reviewed
+    key: liu2023discoverin
+    links:
+      - label: DOI
+        url: https://doi.org/10.1145/3579602
+
+  - title: "Paper Plain: Making Medical Research Papers Approachable to Healthcare Consumers with Natural Language Processing"
+    authors: Tal August, Lucy Lu Wang, Jonathan Bragg, Marti A. Hearst, Andrew Head, Kyle Lo
+    venue: ACM TOCHI
+    year: 2023
+    type: peer-reviewed
+    selected: true
+    key: August2023PaperPM
+    links:
+      - label: PDF
+        url: /resources/paper/pdf/August2023PaperPM.pdf
+      - label: DOI
+        url: https://doi.org/10.1145/3589955
+
+  - title: Detecting Urgency in Multilingual Medical SMS in Kenya
+    authors: Narshion Ngao, Zeyu Wang, Lawrence Nderu, Tobias Mwalili, Tal August, Keshet Ronen
+    venue: AACL Student Research Workshop
+    year: 2022
+    type: preprint
+    badge: Workshop
+    key: Ngao2022Detecting
+    links:
+      - label: PDF
+        url: /resources/paper/pdf/Ngao2022Detecting.pdf
+
+  - title: Generating Scientific Definitions with Controllable Complexity
+    authors: Tal August, Katharina Reinecke, Noah A. Smith
+    venue: ACL
+    year: 2022
+    type: peer-reviewed
+    key: August2022GeneratingSD
+    links:
+      - label: PDF
+        url: /resources/paper/pdf/August2022GeneratingSD.pdf
+      - label: DOI
+        url: https://doi.org/10.18653/v1/2022.acl-long.569
+

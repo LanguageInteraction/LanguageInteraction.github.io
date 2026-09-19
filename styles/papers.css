@@ -11,9 +11,67 @@ body:has(.papers-page) header {
 
 .papers-title {
   font-size: 2.2rem;
-  margin-bottom: 2.5rem;
+  margin-bottom: 1.6rem;
   color: var(--primary-grey);
   letter-spacing: -0.5px;
+}
+
+/* ---- All / Peer-Reviewed / Preprints tabs ---- */
+
+.pub-filter {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 2.5rem;
+  padding-bottom: 1.2rem;
+  border-bottom: 1px solid rgba(0,0,0,.08);
+}
+
+.pub-filter-btn {
+  font-family: inherit;
+  font-size: 0.92rem;
+  font-weight: 600;
+  color: var(--primary-grey);
+  background: #fff;
+  border: 1px solid rgb(165, 165, 165);
+  border-radius: 20px;
+  padding: 0.4rem 1rem;
+  cursor: pointer;
+  transition: all .2s ease;
+}
+
+.pub-filter-btn:hover {
+  background: color-mix(in srgb, var(--st3) 22%, white);
+  transform: translateY(-1px);
+}
+
+.pub-filter-btn:focus-visible {
+  outline: 2px solid var(--primary-grey);
+  outline-offset: 2px;
+}
+
+.pub-filter-btn.is-active {
+  background: var(--primary-grey);
+  border-color: var(--primary-grey);
+  color: #fff;
+  box-shadow: 0 3px 8px rgba(0,0,0,.12);
+}
+
+.pub-count {
+  display: inline-block;
+  margin-left: 0.35rem;
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: rgba(0,0,0,.45);
+}
+
+.pub-filter-btn.is-active .pub-count {
+  color: rgba(255,255,255,.7);
+}
+
+.pub-empty {
+  color: rgba(0,0,0,.5);
+  font-size: 1rem;
 }
 
 .year-group {
@@ -23,7 +81,8 @@ body:has(.papers-page) header {
 .year-heading {
   font-size: 1.6rem;
   font-weight: 800;
-  color: var(--st1);
+  /* darkened: several member palettes are very pale on white */
+  color: color-mix(in srgb, var(--st1) 50%, black);
   margin-bottom: 1.4rem;
   padding-bottom: 0.5rem;
   border-bottom: 3px solid color-mix(in srgb, var(--st3) 50%, white);
@@ -115,7 +174,23 @@ body:has(.papers-page) header {
   display: inline-block;
   padding: 0.15rem 0.55rem;
   background: color-mix(in srgb, var(--st2) 12%, white);
-  color: var(--st2);
+  color: color-mix(in srgb, var(--st2) 45%, black);
+  border-radius: 20px;
+  font-size: 0.72rem;
+  font-weight: 700;
+  font-style: normal;
+  margin-left: 0.5rem;
+  vertical-align: middle;
+  letter-spacing: 0.3px;
+  text-transform: uppercase;
+}
+
+/* `award = {Best Paper}` in the bib */
+.award-badge {
+  display: inline-block;
+  padding: 0.15rem 0.55rem;
+  background: color-mix(in srgb, var(--st1) 12%, white);
+  color: color-mix(in srgb, var(--st1) 45%, black);
   border-radius: 20px;
   font-size: 0.72rem;
   font-weight: 700;
@@ -141,6 +216,10 @@ body:has(.papers-page) header {
 
   .papers-title {
     font-size: 1.8rem;
+    margin-bottom: 1.2rem;
+  }
+
+  .pub-filter {
     margin-bottom: 2rem;
   }
 
@@ -168,6 +247,11 @@ body:has(.papers-page) header {
 
   .papers-title {
     font-size: 1.5rem;
+  }
+
+  .pub-filter-btn {
+    font-size: 0.85rem;
+    padding: 0.35rem 0.8rem;
   }
 
   .year-group {

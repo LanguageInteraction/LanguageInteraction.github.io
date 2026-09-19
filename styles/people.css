@@ -1,0 +1,256 @@
+/* Solid header on the people page (matches the papers page) */
+body:has(.people-page) header {
+  background: #fff;
+}
+
+.people-page {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 5rem 3rem 3rem;
+}
+
+.people-title {
+  font-size: 2.2rem;
+  margin-bottom: 2.5rem;
+  color: var(--primary-grey);
+  letter-spacing: -0.5px;
+}
+
+.people-group {
+  margin-bottom: 3.5rem;
+}
+
+.people-group:last-child {
+  margin-bottom: 0;
+}
+
+.people-heading {
+  font-size: 1.6rem;
+  font-weight: 800;
+  /* darkened: several member palettes are very pale on white */
+  color: color-mix(in srgb, var(--st1) 50%, black);
+  margin-bottom: 2rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 3px solid color-mix(in srgb, var(--st3) 50%, white);
+  letter-spacing: -0.3px;
+}
+
+/* ---- Current team grid (reuses .person from index.css) ---- */
+
+.people-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(165px, 1fr));
+  gap: 2.5rem 1.5rem;
+}
+
+/* .person is sized in vw for the homepage row; pin it down inside the grid */
+.people-grid .person {
+  width: auto;
+}
+
+.people-grid .person img,
+.people-grid .person .person-initials {
+  width: 140px;
+  height: 140px;
+}
+
+.people-grid .person p {
+  text-align: center;
+}
+
+/* ---- Alumni ---- */
+
+.alumni-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+  gap: 1.2rem;
+}
+
+.alum {
+  display: flex;
+  align-items: center;
+  gap: 1.1rem;
+  background: #fff;
+  border: 1px solid rgba(0,0,0,.06);
+  border-left: 5px solid var(--st3);
+  border-radius: 6px;
+  padding: 1rem 1.2rem;
+  transition: transform .12s ease, border-color .12s ease;
+}
+
+.alum:hover {
+  border-left-color: var(--st1);
+  transform: translateY(-1px);
+}
+
+.alum-photo {
+  flex: 0 0 auto;
+  width: 74px;
+  height: 74px;
+  object-fit: contain;
+  padding-top: 10px;
+  border-radius: 100%;
+  background: linear-gradient(
+    270deg,
+    #fff 0%,
+    #fff 50%,
+    color-mix(in srgb, var(--st3) 80%, white) 100%
+  );
+  box-shadow: 0 6px 16px rgba(0,0,0,.04);
+  border-right: 1px solid var(--st3);
+}
+
+.alum-initials {
+  padding-top: 0;
+  font-size: 1.3rem;
+}
+
+.alum-body {
+  min-width: 0;
+}
+
+.alum-name {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: #111;
+  margin-bottom: 0.15rem;
+}
+
+.alum-name a {
+  color: #111;
+}
+
+.alum-name a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 100%;
+  bottom: -2px;
+  background: var(--st1);
+  height: 1px;
+  transition: right .35s ease;
+}
+
+.alum-name a:hover::after {
+  right: 0;
+}
+
+.alum-role {
+  font-size: 0.9rem;
+  color: rgba(0,0,0,.6);
+  margin-bottom: 0.4rem;
+}
+
+.alum-years {
+  color: rgba(0,0,0,.45);
+}
+
+.alum-now {
+  font-size: 0.92rem;
+  color: rgba(0,0,0,.75);
+  line-height: 1.5;
+}
+
+.alum-now-label {
+  display: inline-block;
+  font-size: 0.68rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+  /* darkened against the palette so the label stays legible whichever
+     member's colours are active (several palettes are very pale) */
+  color: color-mix(in srgb, var(--st2) 45%, black);
+  background: color-mix(in srgb, var(--st2) 14%, white);
+  border-radius: 20px;
+  padding: 0.1rem 0.5rem;
+  margin-right: 0.45rem;
+  vertical-align: middle;
+}
+
+.alum-now a {
+  color: rgba(0,0,0,.75);
+  border-bottom: 1px solid var(--st3);
+}
+
+.alum-now a:hover {
+  color: var(--st1);
+}
+
+/* Tablet */
+@media screen and (max-width: 1024px) {
+  .people-page {
+    padding: 4.5rem 2.5rem 2.5rem;
+  }
+}
+
+/* Mobile */
+@media screen and (max-width: 768px) {
+  .people-page {
+    padding: 160px 2rem 2rem;
+  }
+
+  .people-title {
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+  }
+
+  .people-heading {
+    font-size: 1.35rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .people-grid {
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    gap: 2rem 1rem;
+  }
+
+  .people-grid .person img,
+  .people-grid .person .person-initials {
+    width: 120px;
+    height: 120px;
+  }
+
+  .alumni-list {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .people-page {
+    padding: 160px 1.5rem 1.5rem;
+  }
+
+  .people-title {
+    font-size: 1.5rem;
+  }
+
+  .people-group {
+    margin-bottom: 2.5rem;
+  }
+
+  .people-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem 1rem;
+  }
+
+  .people-grid .person img,
+  .people-grid .person .person-initials {
+    width: 110px;
+    height: 110px;
+  }
+
+  .people-grid .person a,
+  .people-grid .person .person-name {
+    font-size: 1rem;
+  }
+
+  .alum {
+    padding: 0.9rem 1rem;
+    gap: 0.9rem;
+  }
+
+  .alum-photo {
+    width: 62px;
+    height: 62px;
+  }
+}

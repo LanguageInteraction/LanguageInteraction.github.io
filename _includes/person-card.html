@@ -1,0 +1,22 @@
+{%- assign p = include.person -%}
+{%- assign name_parts = p.name | split: " " -%}
+{%- assign initials = name_parts[0] | slice: 0 -%}
+{%- if name_parts.size > 1 -%}
+  {%- assign last_initial = name_parts | last | slice: 0 -%}
+  {%- assign initials = initials | append: last_initial -%}
+{%- endif -%}
+<div class="person">
+  {%- if p.photo %}
+  <img src="{{ p.photo }}" alt="{{ p.name }}">
+  {%- else %}
+  <div class="person-initials" role="img" aria-label="{{ p.name }}">{{ initials }}</div>
+  {%- endif %}
+  <p>
+    {%- if p.url -%}
+      <a href="{{ p.url }}" target="_blank" rel="noopener">{{ p.name }}</a>
+    {%- else -%}
+      <span class="person-name">{{ p.name }}</span>
+    {%- endif -%}
+  </p>
+  <p class="person_role">{{ p.role }}</p>
+</div>

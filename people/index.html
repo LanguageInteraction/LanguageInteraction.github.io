@@ -1,0 +1,43 @@
+---
+layout: default
+title: People
+---
+
+<link rel="stylesheet" href="/styles/people.css">
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-78MYTKLQ88"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-78MYTKLQ88');
+</script>
+
+{%- assign current = site.data.people.current -%}
+{%- assign alumni = site.data.people.alumni -%}
+
+<div class="people-page">
+  <h2 class="people-title">People</h2>
+
+  <section class="people-group">
+    <h3 class="people-heading">Current Team</h3>
+    <div class="people-grid">
+      {%- for person in current %}
+      {% include person-card.html person=person %}
+      {%- endfor %}
+    </div>
+  </section>
+
+  {%- if alumni and alumni.size > 0 %}
+  <section class="people-group">
+    <h3 class="people-heading">Alumni</h3>
+    <div class="alumni-list">
+      {%- for person in alumni %}
+      {% include alumni-card.html person=person %}
+      {%- endfor %}
+    </div>
+  </section>
+  {%- endif %}
+</div>

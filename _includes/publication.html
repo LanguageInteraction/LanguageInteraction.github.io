@@ -1,0 +1,31 @@
+{%- comment -%}
+One paper card. Used by /papers/ and by the homepage's Recent Work list.
+Lab members in the author line are bolded from _data/people.yml, so nobody
+loses their bold when they move to alumni and new members get theirs
+retroactively. Give someone a `pub_name:` in people.yml when the name they
+publish under differs from the name the site shows.
+{%- endcomment -%}
+{%- assign p = include.paper -%}
+{%- assign authors = p.authors -%}
+{%- assign nobody = "" | split: "," -%}
+{%- assign alumni = site.data.people.alumni | default: nobody -%}
+{%- assign members = site.data.people.current | concat: alumni -%}
+{%- for m in members -%}
+  {%- assign key = m.pub_name | default: m.name -%}
+  {%- assign bold = key | prepend: '<strong>' | append: '</strong>' -%}
+  {%- assign authors = authors | replace: key, bold -%}
+{%- endfor -%}
+    <div class="paper{% if p.type == 'preprint' %} preprint{% endif %}" data-type="{{ p.type }}">
+      <div class="pub-content">
+        <h4 class="pub-title">{{ p.title }}</h4>
+        <p class="pub-authors">{{ authors }}</p>
+        <p class="pub-venue"><em>{{ p.venue }} {{ p.year }}</em>{% if p.type == 'preprint' %} <span class="preprint-badge">{{ p.badge | default: 'Preprint' }}</span>{% endif %}{% if p.award %} <span class="award-badge">{{ p.award }}</span>{% endif %}</p>
+        {%- if p.links and p.links.size > 0 %}
+        <div class="pub-links">
+          {%- for link in p.links %}
+          <a href="{{ link.url }}" class="pub-link" target="_blank" rel="noopener">{{ link.label }}</a>
+          {%- endfor %}
+        </div>
+        {%- endif %}
+      </div>
+    </div>

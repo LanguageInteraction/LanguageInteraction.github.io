@@ -1,0 +1,36 @@
+{%- assign p = include.person -%}
+{%- assign name_parts = p.name | split: " " -%}
+{%- assign initials = name_parts[0] | slice: 0 -%}
+{%- if name_parts.size > 1 -%}
+  {%- assign last_initial = name_parts | last | slice: 0 -%}
+  {%- assign initials = initials | append: last_initial -%}
+{%- endif -%}
+<div class="alum">
+  {%- if p.photo %}
+  <img class="alum-photo" src="{{ p.photo }}" alt="{{ p.name }}">
+  {%- else %}
+  <div class="alum-photo alum-initials" role="img" aria-label="{{ p.name }}">{{ initials }}</div>
+  {%- endif %}
+  <div class="alum-body">
+    <p class="alum-name">
+      {%- if p.url -%}
+        <a href="{{ p.url }}" target="_blank" rel="noopener">{{ p.name }}</a>
+      {%- else -%}
+        {{ p.name }}
+      {%- endif -%}
+    </p>
+    <p class="alum-role">
+      {{ p.role }}{% if p.years %}<span class="alum-years"> &middot; {{ p.years }}</span>{% endif %}
+    </p>
+    {%- if p.now %}
+    <p class="alum-now">
+      <span class="alum-now-label">Now</span>
+      {%- if p.now_url -%}
+        <a href="{{ p.now_url }}" target="_blank" rel="noopener">{{ p.now }}</a>
+      {%- else -%}
+        {{ p.now }}
+      {%- endif -%}
+    </p>
+    {%- endif %}
+  </div>
+</div>

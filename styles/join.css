@@ -1,0 +1,100 @@
+/* Solid header on the join page (matches the papers and people pages) */
+body:has(.join-page) header {
+  background: #fff;
+}
+
+.join-page {
+  max-width: 820px;
+  margin: 0 auto;
+  padding: 5rem 3rem 3rem;
+  color: var(--primary-grey);
+  font-size: 1.05rem;
+  line-height: 1.8;
+}
+
+.join-title {
+  font-size: 2.2rem;
+  margin-bottom: 2.5rem;
+  letter-spacing: -0.5px;
+}
+
+.join-section {
+  margin-bottom: 3.5rem;
+}
+
+.join-section:last-child {
+  margin-bottom: 0;
+}
+
+.join-heading {
+  font-size: 1.6rem;
+  font-weight: 800;
+  /* darkened: several member palettes are very pale on white */
+  color: color-mix(in srgb, var(--st1) 50%, black);
+  margin-bottom: 1.2rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 3px solid color-mix(in srgb, var(--st3) 50%, white);
+  letter-spacing: -0.3px;
+}
+
+.join-subheading {
+  font-size: 1.15rem;
+  font-weight: 700;
+  margin: 2rem 0 0.8rem;
+}
+
+.join-page p {
+  margin-bottom: 1.2rem;
+}
+
+.join-page a {
+  color: var(--primary-grey);
+  font-weight: 600;
+  border-bottom: 1px solid var(--st3);
+}
+
+.join-page a:hover {
+  color: color-mix(in srgb, var(--st1) 50%, black);
+  border-bottom-color: color-mix(in srgb, var(--st1) 50%, black);
+}
+
+.join-steps {
+  margin: 0 0 1.4rem 1.4rem;
+  padding-left: 0.6rem;
+}
+
+.join-steps li {
+  margin-bottom: 0.5rem;
+}
+
+/* Tablet */
+@media screen and (max-width: 1024px) {
+  .join-page {
+    padding: 4.5rem 2.5rem 2.5rem;
+  }
+}
+
+/* Mobile */
+@media screen and (max-width: 768px) {
+  .join-page {
+    padding: 160px 2rem 2rem;
+  }
+
+  .join-title {
+    font-size: 1.8rem;
+  }
+
+  .join-heading {
+    font-size: 1.35rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .join-page {
+    padding: 160px 1.5rem 1.5rem;
+  }
+
+  .join-title {
+    font-size: 1.5rem;
+  }
+}
