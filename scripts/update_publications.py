@@ -615,9 +615,25 @@ def bib_authors(work):
     return " and ".join(out)
 
 
+def non_archival_badge(work):
+    """CHI Extended Abstracts covers late-breaking work, posters, demos and
+    workshops - reviewed, but not the version of record. The catalogue says so
+    in the booktitle, so catch it rather than filing it as a full paper."""
+    where = ((work.get("primary_location") or {}).get("raw_source_name") or "").lower()
+    if "extended abstract" in where:
+        return "Extended Abstract"
+    if "workshop" in where:
+        return "Workshop"
+    return None
+    # Note: this cannot tell a paper published AT a workshop from a proposal TO
+    # RUN one - both look the same in the catalogue. Check that by hand and set
+    # badge = {Workshop Proposal} where it applies.
+
+
 def bib_entry(work, aliases, existing):
     """A new entry for _data/publications.bib, marked as a draft."""
     pre = is_preprint(work)
+    badge = None if pre else non_archival_badge(work)
     fields = [
         ("title", work["title"]),
         ("author", bib_authors(work)),
@@ -628,7 +644,8 @@ def bib_entry(work, aliases, existing):
         ("month", MONTH_NAMES[int((work.get("publication_date") or "0000-00")[5:7]) - 1]
                   if (work.get("publication_date") or "")[5:7].isdigit()
                   and 1 <= int((work.get("publication_date") or "0000-00")[5:7]) <= 12 else ""),
-        ("keywords", "non-peer-review" if pre else "peer-review"),
+        ("keywords", "non-peer-review" if pre or badge else "peer-review"),
+        ("badge", badge or ""),
         ("draft", "true"),
         ("added", datetime.date.today().isoformat()),
     ]

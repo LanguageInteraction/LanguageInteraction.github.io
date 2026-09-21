@@ -150,7 +150,8 @@ papers:
     authors: Tal August, Andrew Head, Alexa Siu, Elena L. Glassman, Jonathan K. Kummerfeld, Joseph Chee Chang, Lucy Lu Wang, Marti A. Hearst
     venue: CHI
     year: 2026
-    type: peer-reviewed
+    type: preprint
+    badge: Workshop Proposal
     key: august2026science
     links:
       - label: DOI
@@ -160,7 +161,8 @@ papers:
     authors: Yiren Liu, Yun Huang, Shunan Guo
     venue: CHI
     year: 2026
-    type: peer-reviewed
+    type: preprint
+    badge: Extended Abstract
     key: liu2026mosaic
     links:
       - label: DOI
@@ -170,7 +172,8 @@ papers:
     authors: Yifan Song, Yee Wei Au, Hon Yung Wong, Brian P. Bailey, Tal August
     venue: CHI
     year: 2026
-    type: peer-reviewed
+    type: preprint
+    badge: Extended Abstract
     key: song2026breaking
     links:
       - label: DOI
