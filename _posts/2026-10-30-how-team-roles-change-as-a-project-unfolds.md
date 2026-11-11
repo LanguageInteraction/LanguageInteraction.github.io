@@ -53,3 +53,7 @@ Our findings highlight the value of tracking communication roles to better under
 
 Yifan Song, Wenxuan Wendy Shi, Brian Bailey, and Tal August. 2026. [Who Plays Which Role When? Communication Role Dynamics for Peer Recognition and Team Performance Prediction.](https://aclanthology.org/2026.acl-long.1930/) ACL 2026.
 
+
+References
+[1] [Team Role Adoption and Distribution in Engineering Project Meetings](https://www.mdpi.com/2076-328x/10/2/57)
+[2] [DeliData: A Dataset for Deliberation in Multi-party Problem Solving](https://dl.acm.org/doi/10.1145/3610056)
