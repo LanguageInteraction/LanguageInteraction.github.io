@@ -55,5 +55,7 @@ Yifan Song, Wenxuan Wendy Shi, Brian Bailey, and Tal August. 2026. [Who Plays Wh
 
 
 References
+
 [1] [Team Role Adoption and Distribution in Engineering Project Meetings](https://www.mdpi.com/2076-328x/10/2/57)
+
 [2] [DeliData: A Dataset for Deliberation in Multi-party Problem Solving](https://dl.acm.org/doi/10.1145/3610056)
