@@ -67,6 +67,17 @@ body:has(.join-page) header {
   margin-bottom: 0.5rem;
 }
 
+/* Tinted aside, e.g. the CSARGs note; follows the live member palette.
+   Mixed into light grey (not white) and with a darkened border so it still
+   stands out when the palette's background colour is very pale. */
+.join-page .join-callout {
+  background: color-mix(in srgb, var(--st3) 25%, #f3f3f3);
+  border-left: 4px solid color-mix(in srgb, var(--st3) 80%, black);
+  border-radius: 6px;
+  padding: 1rem 1.25rem;
+  margin: 1.8rem 0 0;
+}
+
 /* Tablet */
 @media screen and (max-width: 1024px) {
   .join-page {

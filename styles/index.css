@@ -177,7 +177,8 @@ main{
     margin-bottom: 1.5rem;
 }
 
-#intro a{
+#intro a,
+#updates a{
     text-decoration: underline;
     text-decoration-color: var(--st3);
     text-underline-offset: 4px;
@@ -186,7 +187,8 @@ main{
     text-shadow: 1px 1px 1px var(--st3);
     transition: color 0.2s ease, text-decoration-color 0.2s ease, text-decoration-thickness 0.2s ease;
 }
-#intro a:hover {
+#intro a:hover,
+#updates a:hover {
     color: var(--st1);
     text-decoration-color: var(--st1);
     text-decoration-thickness: 2px;
